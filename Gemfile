@@ -42,3 +42,5 @@ end
 
 gem 'money-rails'
 
+# For URL ids
+gem 'friendly_id'
