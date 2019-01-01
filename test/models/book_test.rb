@@ -1,10 +1,18 @@
 require 'test_helper'
 
 class BookTest < ActiveSupport::TestCase
-  test 'valid book' do
+  test 'valid book with one author' do
     book = Book.new title: 'Book Title'
     book.authors << authors(:one)
     assert book.valid?
+  end
+
+  test 'valid book with two authors' do
+    book = Book.new title: 'Book Title'
+    book.authors << authors(:one)
+    book.authors << authors(:two)
+    assert book.valid?
+    assert_equal 2, book.authors.size
   end
 
   test 'invalid without title' do
