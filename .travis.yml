@@ -3,4 +3,4 @@ before_script:
   - psql -c "ALTER USER bookstore_api CREATEDB;" -U postgres
 language: ruby
 rvm:
-  - 2.6.0
+  - 2.6.2
