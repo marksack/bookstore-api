@@ -25,7 +25,7 @@ default: &default
 
 development:
   <<: *default
-  database: bookstore-api_development
+  database: bookstore_api_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -55,7 +55,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: bookstore-api_test
+  database: bookstore_api_test
   host: localhost
 
 # As with config/secrets.yml, you never want to store sensitive information,
@@ -83,6 +83,6 @@ production:
   # For details on connection pooling, see Rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  database: bookstore-api_production
-  username: bookstore-api
+  database: bookstore_api_production
+  username: bookstore_api
   password: <%= ENV['BOOKSTORE-API_DATABASE_PASSWORD'] %>
