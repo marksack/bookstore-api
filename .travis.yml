@@ -1,6 +1,12 @@
+services:
+  - postgresql
+
 before_script:
   - psql -c "CREATE USER bookstore_api WITH PASSWORD 'bookstore_api';" -U postgres
   - psql -c "ALTER USER bookstore_api CREATEDB;" -U postgres
+  - psql -c "CREATE DATABASE bookstore-api_test;" -U bookstore_api
+
 language: ruby
+
 rvm:
   - 2.6.2
