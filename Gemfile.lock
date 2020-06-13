@@ -153,12 +153,12 @@ DEPENDENCIES
   pg (>= 0.18, < 2.0)
   puma (~> 3.11)
   rack-cors
-  rails (~> 5.2.2)
+  rails (~> 5.2.4.3)
   spring
   spring-watcher-listen (~> 2.0.0)
 
 RUBY VERSION
-   ruby 2.6.2p47
+   ruby 2.7.1p83
 
 BUNDLED WITH
    1.17.3
