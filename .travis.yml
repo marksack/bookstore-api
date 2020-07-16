@@ -8,6 +8,3 @@ before_script:
   - psql -c "ALTER DATABASE bookstore_api_test OWNER TO bookstore_api;" -U postgres
 
 language: ruby
-
-rvm:
-  - 2.6.2
